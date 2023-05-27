@@ -29,7 +29,7 @@ telnet localhost 21345
 
 Usage: 
 ```bash
-NICK \<nickname>
+NICK &lt;nickname&gt;
 ```
 
 This message is sent by the client in order to declare what nickname the user wants to be known
@@ -39,7 +39,7 @@ by.
 
 Usage:
 ```bash
-USER \<username> 0 * :\<real\_name>
+USER &lt;username&gt; 0 * :&lt;real_name&gt;
 ```
 
 This command can be used once a user has set their nickname. A user may then enter their real name and become registered in the system. A registered client can send and recieve private messages, and join and leave channels.
@@ -53,7 +53,7 @@ This command takes no arguments, and is used to disconnect from the server. If t
 
 Usage:
 ```bash
-JOIN \<channel\_name>
+JOIN &lt;channel_name&gt;
 ````
 
 This command allows a user to JOIN a channel, all users in this channel will be notified that a new user has joined. If the channel does not yet exist, it is created, and the creator is added. A channel name must be a single \# symbol followed by the channel name.
@@ -63,7 +63,7 @@ This command allows a user to JOIN a channel, all users in this channel will be 
 
 Usage:
 ```bash
-PART \<channel\_name>
+PART &lt;channel_name&gt;
 ```
 
 This message is sent by a client when they wish to leave a channel they are in. All other users in the channel will be notified that this user has left the channnel. If the channel is now empty, it will be deleted.
@@ -72,16 +72,16 @@ This message is sent by a client when they wish to leave a channel they are in. 
 
 Usage:
 ```bash
-PRIVMSG \<target> :\<message>
+PRIVMSG &lt;target&gt; :&lt;message&gt;
 ```
 
-This command allows a user to send a private message to other users. If the \<target> argument is a user's nickname, this user will be the sole recipient of the message. If the \<target> argument is a channel name, all users in that channel will recieve the message.
+This command allows a user to send a private message to other users. If the \<lttarget> argument is a user's nickname, this user will be the sole recipient of the message. If the \<lttarget> argument is a channel name, all users in that channel will recieve the message.
 
 #### NAMES
 
 Usage:
 ```bash
-NAMES \<channel\_name>
+NAMES &lt;channel_name&gt;
 ```
 If the channel name provided is valid, the server will reply with the list of nicknames of all registered users in that channel.
 
@@ -101,7 +101,7 @@ This command takes no arguments. It responds with a message about the server, an
 
 Usage:
 ```bash
-PING \<text>
+PING &lt;text&gt;
 ```
 
-This command will prompt a server response: PONG \<text>. This can be used for clients to ensure their connection is still active.
+This command will prompt a server response: PONG \<lttext>. This can be used for clients to ensure their connection is still active.
