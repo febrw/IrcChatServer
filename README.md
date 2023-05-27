@@ -29,7 +29,7 @@ telnet localhost 21345
 
 Usage: 
 ```bash
-NICK &lt;nickname&gt;
+NICK <nickname>
 ```
 
 This message is sent by the client in order to declare what nickname the user wants to be known
