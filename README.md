@@ -104,4 +104,8 @@ Usage:
 PING <text>
 ```
 
-This command will prompt a server response: PONG \<lttext>. This can be used for clients to ensure their connection is still active.
+This command will prompt a server response:
+```bash
+PONG <text>
+```
+This can be used for clients to ensure their connection is still active.
