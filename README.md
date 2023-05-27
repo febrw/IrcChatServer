@@ -1,10 +1,10 @@
-#IRC Chat Server
+# IRC Chat Server
 
 This project implements a simplified version of the Internet Relay Chat (IRC) protocol. Users can create channels, join other channels, broadcast messages to a channel, or privately message other users.
 
-# Compiling and Running
+## Compiling and Running
 
-Within ```bash src ``` run:
+Within the src directory run:
 
 ```bash
 javac *.java
@@ -23,9 +23,9 @@ telnet localhost 21345
 ```
 
 
-# Commands Implemented
+## Commands Implemented
 
-- NICK
+### - NICK
 
 Usage: NICK \<nickname>
 
